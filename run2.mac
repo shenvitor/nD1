@@ -1,0 +1,14 @@
+# Macro file for nD1
+# 
+# To be run preferably in batch, without graphics:
+# % nD1[a,b] run2.mac
+#
+/tracking/storeTrajectory 0
+#adding above
+#/run/numberOfThreads 4
+/run/initialize
+/gun/particle neutron
+/gun/energy 14 MeV
+
+/analysis/setFileName run2test.root
+/run/beamOn 10000

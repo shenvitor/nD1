@@ -1,0 +1,37 @@
+# Macro file for nD1
+# 
+# To be run preferably in batch, without graphics:
+# % nDa[a,b] run.mac
+#
+/tracking/storeTrajectory 0
+/run/numberOfThreads 24
+/run/initialize
+/gun/particle neutron
+
+/gun/energy 5 MeV
+/analysis/setFileName H-Output/5n-Size1.root
+/run/beamOn 1000000
+
+/gun/energy 10 MeV
+/analysis/setFileName H-Output/10n-Size1.root
+/run/beamOn 1000000
+
+/gun/energy 14 MeV
+/analysis/setFileName H-Output/14n-Size1.root
+/run/beamOn 1000000
+
+/gun/energy 25 MeV
+/analysis/setFileName H-Output/25n-Size1.root
+/run/beamOn 1000000
+
+/gun/energy 50 MeV
+/analysis/setFileName H-Output/50n-Size1.root
+/run/beamOn 1000000
+
+/gun/energy 75 MeV
+/analysis/setFileName H-Output/75n-Size1.root
+/run/beamOn 1000000
+
+/gun/energy 100 MeV
+/analysis/setFileName H-Output/100n-Size1.root
+/run/beamOn 1000000
